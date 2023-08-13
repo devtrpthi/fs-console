@@ -1,21 +1,13 @@
-const Hello = (props) => {
-  console.log(props)
+const App = () =>{
+  const friends = [
+    {name: "joe", age: 36},
+    {name: "root", age: 25},
+  ]
   return (
-    <div>
-      <p>Hello {props.name}, you are {props.age} years old</p>
-    </div>
-  )
-}
-
-const App = () => {
-  const name = "peter"
-  const age = 25
-  return (
-    <div>
-      <p>greetings</p>
-      <Hello name='Maya' and  age={26+10} />
-      <Hello name={name} and age = {age}/>
-    </div>
+    <>
+      <p>{friends[0].name} implies {friends[0].age}</p>
+      <p>{friends[1].name} implies {friends[1].age}</p>
+    </>
   )
 }
 
